@@ -1,223 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crossworld Travel Solutions – GMNP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossworld Travel Solutions – GMNP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<style>
-* {margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; scroll-behavior:smooth;}
-body {line-height:1.6; background:#f9f9f9;}
-a {text-decoration:none; color:inherit;}
-button {cursor:pointer; border:none; transition:0.3s;}
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; scroll-behavior:smooth;}
+        body {line-height:1.6; background:#f9f9f9; color: #333;}
+        a {text-decoration:none; color:inherit;}
+        button {cursor:pointer; border:none; transition:0.3s;}
 
-/* Header */
-header {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:#4B0082;
-    color:white;
-    z-index:1000;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 25px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-header .logo-left img {height:50px;}
-nav {flex:1; text-align:center;}
-nav a {
-    margin:0 10px;
-    color:white;
-    font-weight:500;
-    padding:8px 14px;
-    border-radius:5px;
-    transition:0.3s;
-}
-nav a:hover {background:#FFD700; color:#000; transform:scale(1.05);}
-.header-btn {
-    background:#FFD700;
-    color:#000;
-    padding:10px 18px;
-    border-radius:6px;
-    font-weight:700;
-    margin-left:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
-    transition:0.4s;
-}
-.header-btn:hover {background:#FFC107; transform:scale(1.08);}
+        /* Header */
+        header {
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            background:#4B0082;
+            color:white;
+            z-index:1000;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:12px 25px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+        header .logo-left img {height:50px; display: block;}
+        nav {flex:1; text-align:center;}
+        nav a {
+            margin:0 10px;
+            color:white;
+            font-weight:500;
+            padding:8px 14px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+        nav a:hover {background:#FFD700; color:#000; transform:scale(1.05);}
+        .header-btn {
+            background:#FFD700;
+            color:#000;
+            padding:10px 18px;
+            border-radius:6px;
+            font-weight:700;
+            margin-left:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            transition:0.4s;
+        }
+        .header-btn:hover {background:#FFC107; transform:scale(1.08);}
 
-/* Hero */
-.hero {
-    position:relative;
-    height:650px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-    margin-top:70px;
-    overflow:hidden;
-}
-.hero-image img {
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0.45;
-    z-index:1;
-    filter:brightness(0.7);
-}
-.hero-text {position:relative; z-index:2; animation:fadeIn 2s ease-out;}
-.hero-title {
-    color:#FFD700;
-    font-size:3.2rem;
-    font-weight:900;
-    margin-bottom:15px;
-    text-shadow:2px 2px 12px rgba(0,0,0,0.6);
-}
-.hero-subtitle {
-    color:#FFD700;
-    font-family:'Montserrat', sans-serif;
-    font-size:1.7rem;
-    margin-bottom:30px;
-    text-shadow:1px 1px 8px rgba(0,0,0,0.5);
-}
-.hero-btns button {
-    margin:0 12px;
-    padding:12px 25px;
-    border-radius:6px;
-    font-weight:700;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    transition:0.4s;
-}
-.hero-btns .apply {background:#FFD700; color:#000;}
-.hero-btns .apply:hover {transform:scale(1.1) rotate(-2deg); background:#FFC107;}
-.hero-btns .consult {background:#800080; color:white;}
-.hero-btns .consult:hover {transform:scale(1.1) rotate(2deg); background:#9C27B0;}
+        /* Hero Section */
+        .hero {
+            position:relative;
+            height:650px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            margin-top:70px;
+            overflow:hidden;
+            background: #222; /* Fallback color */
+        }
+        .hero-image img {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            opacity:0.5;
+            z-index:1;
+        }
+        .hero-text {position:relative; z-index:2; animation:fadeIn 1.5s ease-out; padding: 0 20px;}
+        .hero-title {
+            color:#FFD700;
+            font-size:3.2rem;
+            font-weight:900;
+            margin-bottom:15px;
+            text-shadow:2px 2px 12px rgba(0,0,0,0.8);
+        }
+        .hero-subtitle {
+            color:#ffffff;
+            font-family:'Montserrat', sans-serif;
+            font-size:1.7rem;
+            margin-bottom:30px;
+            text-shadow:1px 1px 8px rgba(0,0,0,0.7);
+        }
+        .hero-btns button {
+            margin:10px;
+            padding:14px 28px;
+            border-radius:6px;
+            font-weight:700;
+            font-size: 1rem;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+            transition:0.4s;
+        }
+        .hero-btns .apply {background:#FFD700; color:#000;}
+        .hero-btns .apply:hover {transform:scale(1.05); background:#FFC107;}
+        .hero-btns .consult {background:#800080; color:white;}
+        .hero-btns .consult:hover {transform:scale(1.05); background:#9C27B0;}
 
-/* Sections */
-section {padding:120px 20px 100px; max-width:1200px; margin:0 auto;}
+        /* Sections Styling */
+        section {padding:80px 20px; max-width:1200px; margin:0 auto;}
+        h2.section-title {
+            background:#FFD700;
+            display:inline-block;
+            padding:8px 16px;
+            border-radius:5px;
+            margin-bottom:25px;
+            font-size:1.8rem;
+            color: #000;
+            font-family:'Montserrat', sans-serif;
+        }
 
-/* Text + Image Side by Side Layout */
-.content-wrapper {
-    display:flex;
-    align-items:center;
-    gap:40px;
-    flex-wrap:wrap;
-    margin-top:30px;
-}
-.content-text {flex:1; min-width:300px;}
-.content-text p {font-size:1.1rem; line-height:1.8; color:#333;}
-.content-image {flex:1; min-width:300px;}
-.content-image img {
-    width:100%;
-    height:auto;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-    object-fit:cover;
-}
-/* Reverse order for alternate sections */
-.content-section.reverse .content-wrapper {flex-direction:row-reverse;}
-/* Section titles */
-h2.section-title {
-    background:#FFD700;
-    display:inline-block;
-    padding:6px 12px;
-    border-radius:5px;
-    margin-bottom:25px;
-    font-size:2rem;
-    font-family:'Montserrat', sans-serif;
-}
+        .content-wrapper {
+            display:flex;
+            align-items:center;
+            gap:50px;
+            flex-wrap:wrap;
+            margin-top:20px;
+        }
+        .content-text {flex:1; min-width:300px;}
+        .content-text p {font-size:1.1rem; line-height:1.8; color:#444;}
+        .content-image {flex:1; min-width:300px;}
+        .content-image img {
+            width:100%;
+            height:auto;
+            border-radius:15px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.1);
+            object-fit:cover;
+            display: block;
+        }
+        
+        .reverse .content-wrapper {flex-direction:row-reverse;}
 
-/* Official Partner */
-.official-partner {
-    background:#FFD700;
-    text-align:center;
-    padding:50px 20px;
-}
-.official-partner-logos {
-    display:flex;
-    gap:40px;
-    justify-content:center;
-    margin-top:25px;
-}
-.official-partner-logos img {height:70px; transition:0.3s;}
-.official-partner-logos img:hover {transform:scale(1.1) rotate(-2deg);}
+        /* Partner Section */
+        .official-partner {
+            background:#FFD700;
+            text-align:center;
+            padding:60px 20px;
+            margin-top: 40px;
+        }
+        .official-partner p { font-size: 1.2rem; margin-bottom: 20px; color: #000; }
+        .official-partner-logos {
+            display:flex;
+            gap:50px;
+            justify-content:center;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+        .official-partner-logos img {height:80px; filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1)); transition:0.3s;}
+        .official-partner-logos img:hover {transform:scale(1.1);}
 
-/* Contact */
-.social-links {
-    display:flex;
-    gap:25px;
-    font-size:2rem;
-    margin-top:25px;
-    justify-content:center;
-}
-.social-links a {color:#4B0082; transition:0.3s;}
-.social-links a:hover {color:#FFD700; transform:scale(1.2);}
+        /* Contact Section */
+        #contact { text-align: center; background: #fff; padding-bottom: 120px; }
+        .social-links {
+            display:flex;
+            gap:25px;
+            font-size:2.2rem;
+            margin-top:30px;
+            justify-content:center;
+        }
+        .social-links a {color:#4B0082; transition:0.3s;}
+        .social-links a:hover {color:#FFD700; transform:translateY(-5px);}
 
-/* Floating WhatsApp */
-.whatsapp {
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    background:#25D366;
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-shadow:0 5px 20px rgba(0,0,0,0.3);
-    transition:0.3s;
-}
-.whatsapp:hover {transform:scale(1.1);}
-.whatsapp a {color:white; font-size:2.2rem;}
+        /* Floating Elements */
+        .whatsapp {
+            position:fixed;
+            bottom:25px;
+            right:25px;
+            background:#25D366;
+            width:60px;
+            height:60px;
+            border-radius:50%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            box-shadow:0 5px 20px rgba(0,0,0,0.3);
+            z-index: 2000;
+            transition:0.3s;
+        }
+        .whatsapp:hover {transform:scale(1.1);}
+        .whatsapp a {color:white; font-size:2.2rem;}
 
-/* Animations */
-@keyframes fadeIn {
-    0% {opacity:0; transform:translateY(40px);}
-    100% {opacity:1; transform:translateY(0);}
-}
+        @keyframes fadeIn {
+            0% {opacity:0; transform:translateY(30px);}
+            100% {opacity:1; transform:translateY(0);}
+        }
 
-/* Responsive */
-@media(max-width:768px){
-    nav {display:none;}
-    .hero-title {font-size:2.2rem;}
-    .hero-subtitle {font-size:1.3rem;}
-    .hero-btns button {margin:8px 0; width:160px;}
-    .social-links {gap:15px; font-size:1.5rem;}
-    .content-wrapper {flex-direction:column !important;}
-    .content-text, .content-image {min-width:100%;}
-}
-</style>
+        /* Responsive Fixes */
+        @media(max-width:768px){
+            nav {display:none;}
+            .hero-title {font-size:2rem;}
+            .hero-subtitle {font-size:1.2rem;}
+            .content-wrapper {flex-direction:column !important; gap: 30px;}
+            h2.section-title { font-size: 1.5rem; }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
     <div class="logo-left">
-        <img src="your-company-logo.png" alt="Logo">
+        <img src="images/logo.png" alt="Crossworld Logo">
     </div>
     <nav>
         <a href="#about">About</a>
         <a href="#courses">Courses</a>
-        <a href="#why">Why Choose Us</a>
+        <a href="#why">Why Us</a>
         <a href="#gmnp">GMNP</a>
-        <a href="#programme-details">Programme Details</a>
-        <a href="#post-plab-support">Post PLAB Support</a>
+        <a href="#programme-details">Details</a>
+        <a href="#post-plab-support">Support</a>
         <a href="#contact">Contact</a>
-        <!-- Apply Now button removed from header -->
     </nav>
+    <button class="header-btn" onclick="openForm()">Apply Now</button>
 </header>
 
 <section class="hero">
@@ -230,114 +233,111 @@ h2.section-title {
         </div>
     </div>
     <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1588776814546-1f3f0d84c91c?auto=format&fit=crop&w=1920&q=80" alt="Hero Image">
+        <img src="images/hero-bg.jpg" alt="NHS Medical Career">
     </div>
 </section>
 
-<!-- About Section -->
 <section id="about" class="content-section">
   <div class="content-wrapper">
     <div class="content-text">
       <h2 class="section-title">About the Programme</h2>
-      <p>Crossworld Travel Solutions provides a complete pathway for GMC registration and NHS career guidance for medical professionals. Our expert team ensures a smooth process from start to finish.</p>
+      <p>Crossworld Travel Solutions provides a complete pathway for GMC registration and NHS career guidance for medical professionals. Our expert team ensures a smooth process from start to finish, helping you navigate the complexities of international medical recruitment.</p>
     </div>
     <div class="content-image">
-      <img src="https://images.unsplash.com/photo-1588776814546-1f3f0d84c91c?auto=format&fit=crop&w=800&q=80" alt="About Image">
+      <img src="images/about.jpg" alt="About GMNP">
     </div>
   </div>
 </section>
 
-<!-- Courses Section -->
 <section id="courses" class="content-section reverse">
   <div class="content-wrapper">
     <div class="content-text">
       <h2 class="section-title">Our Training & Courses</h2>
-      <p>We offer comprehensive courses to prepare you for PLAB exams, GMC registration, and successful integration into NHS. Courses include live sessions, recorded lectures, and practice assessments.</p>
+      <p>We offer comprehensive courses to prepare you for PLAB exams, GMC registration, and successful integration into NHS. Our curriculum includes live interactive sessions, recorded lectures by experts, and rigorous practice assessments to ensure you are exam-ready.</p>
     </div>
     <div class="content-image">
-      <img src="https://images.unsplash.com/photo-1581091870626-0b0c39532c91?auto=format&fit=crop&w=800&q=80" alt="Courses Image">
+      <img src="images/courses.jpg" alt="Medical Training Courses">
     </div>
   </div>
 </section>
 
-<!-- Why Choose Us Section -->
 <section id="why" class="content-section">
   <div class="content-wrapper">
     <div class="content-text">
       <h2 class="section-title">Why Choose Us</h2>
-      <p>Our experienced trainers, personalized support, and proven track record make us the ideal partner for your medical career in the UK. Join hundreds of successful candidates who trusted us.</p>
+      <p>Our experienced trainers, personalized 1-on-1 support, and proven track record make us the ideal partner for your medical career in the UK. Join hundreds of successful candidates who have successfully transitioned to the NHS with our help.</p>
     </div>
     <div class="content-image">
-      <img src="https://images.unsplash.com/photo-1596496056773-71a681e3f451?auto=format&fit=crop&w=800&q=80" alt="Why Choose Us Image">
+      <img src="images/why-us.jpg" alt="Why Choose Crossworld">
     </div>
   </div>
 </section>
 
-<!-- GMNP Section -->
 <section id="gmnp" class="content-section reverse">
   <div class="content-wrapper">
     <div class="content-text">
       <h2 class="section-title">GMNP</h2>
-      <p>The Global Medics NHS Programme (GMNP) is designed to guide international medical professionals through GMC registration, PLAB exams, and secure NHS placements efficiently and confidently.</p>
+      <p>The Global Medics NHS Programme (GMNP) is a specialized framework designed to guide international medical graduates (IMGs) through the GMC registration process and PLAB exams, ensuring they secure high-quality NHS placements efficiently.</p>
     </div>
     <div class="content-image">
-      <img src="https://images.unsplash.com/photo-1581091215361-9d8e84d768da?auto=format&fit=crop&w=800&q=80" alt="GMNP Image">
+      <img src="images/gmnp.jpg" alt="Global Medics NHS Programme">
     </div>
   </div>
 </section>
 
-<!-- Programme Details Section -->
 <section id="programme-details" class="content-section">
   <div class="content-wrapper">
     <div class="content-text">
       <h2 class="section-title">Programme Details</h2>
-      <p>Our programme covers comprehensive training, mentorship, exam preparation, and post-registration support. We provide structured guidance and resources to ensure every candidate succeeds.</p>
+      <p>Our programme covers clinical training, mentorship from senior NHS doctors, and intensive exam preparation. We provide structured resources, visa guidance, and relocation assistance to make your journey stress-free.</p>
     </div>
     <div class="content-image">
-      <img src="https://images.unsplash.com/photo-1581090700222-2c7f12f444d6?auto=format&fit=crop&w=800&q=80" alt="Programme Details Image">
+      <img src="images/details.jpg" alt="Programme Details">
     </div>
   </div>
 </section>
 
-<!-- Post PLAB Support Section -->
 <section id="post-plab-support" class="content-section reverse">
   <div class="content-wrapper">
     <div class="content-text">
       <h2 class="section-title">Post PLAB Support</h2>
-      <p>We offer guidance on CV building, job applications, interview preparation, and career progression within the NHS. Our support continues even after PLAB success to ensure a smooth transition.</p>
+      <p>Success in PLAB is just the beginning. We offer dedicated guidance on professional CV building, NHS job applications, interview coaching, and long-term career progression support within the UK healthcare system.</p>
     </div>
     <div class="content-image">
-      <img src="https://images.unsplash.com/photo-1581091012184-0d93b3a1f7e8?auto=format&fit=crop&w=800&q=80" alt="Post PLAB Support Image">
+      <img src="images/support.jpg" alt="Post PLAB Support">
     </div>
   </div>
 </section>
 
-<!-- Official Partner -->
 <section class="official-partner">
     <p><strong>"Crossworld Travel Solutions" is an official partner of Hive Medical Academy UK</strong></p>
     <div class="official-partner-logos">
-        <img src="company-logo.png" alt="Company Logo">
-        <img src="partner-logo.png" alt="Partner Logo">
+        <img src="images/logo.png" alt="Crossworld Logo">
+        <img src="images/partner-logo.png" alt="Hive Medical Academy Logo">
     </div>
 </section>
 
-<!-- Contact -->
 <section id="contact">
     <h2 class="section-title">Contact Us</h2>
-    <p><strong>Phone:</strong> <a href="tel:+923269575050">+92 3269575050</a></p>
-    <p><strong>Email:</strong> <a href="mailto:crossworldpew@gmail.com">crossworldpew@gmail.com</a></p>
-    <p><a href="https://www.google.com/maps/search/?api=1&query=4+%26+5+2nd+Floor+Liberty+Mall+Tahkal+University+Road+Peshawar+Pakistan" target="_blank">#4,5 2nd Floor, Liberty Mall, Tahkal University Road, Peshawar, Pakistan</a></p>
+    <div style="margin-bottom: 20px;">
+        <p><strong>Phone:</strong> <a href="tel:+923269575050" style="color:#4B0082;">+92 326 9575050</a></p>
+        <p><strong>Email:</strong> <a href="mailto:crossworldpew@gmail.com" style="color:#4B0082;">crossworldpew@gmail.com</a></p>
+        <p style="margin-top:10px;">
+            <i class="fas fa-map-marker-alt"></i> 
+            <a href="https://maps.google.com/?q=Liberty+Mall+Tahkal+University+Road+Peshawar" target="_blank">
+                #4,5 2nd Floor, Liberty Mall, Tahkal University Road, Peshawar, Pakistan
+            </a>
+        </p>
+    </div>
 
     <div class="social-links">
         <a href="https://www.facebook.com/share/1C1QqXufRV/" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://www.instagram.com/cross.world.pew?igsh=MTFoZWhqandwdmxvYg==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="mailto:crossworldpew@gmail.com"><i class="fas fa-envelope"></i></a>
         <a href="https://wa.me/923269575050" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.google.com/maps/search/?api=1&query=4+%26+5+2nd+Floor+Liberty+Mall+Tahkal+University+Road+Peshawar+Pakistan" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
     </div>
 </section>
 
-<!-- Floating WhatsApp -->
 <div class="whatsapp">
     <a href="https://wa.me/923269575050" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </div>
