@@ -65,7 +65,14 @@
             color:white;
             margin-top:70px;
             overflow:hidden;
-            background: #222; /* Fallback color */
+            background: #222;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top:0; left:0; width:100%; height:100%;
+            background: rgba(0,0,0,0.5);
+            z-index:1;
         }
         .hero-image img {
             position:absolute;
@@ -74,8 +81,7 @@
             width:100%;
             height:100%;
             object-fit:cover;
-            opacity:0.5;
-            z-index:1;
+            z-index:0;
         }
         .hero-text {position:relative; z-index:2; animation:fadeIn 1.5s ease-out; padding: 0 20px;}
         .hero-title {
@@ -137,7 +143,6 @@
             object-fit:cover;
             display: block;
         }
-        
         .reverse .content-wrapper {flex-direction:row-reverse;}
 
         /* Partner Section */
@@ -209,7 +214,7 @@
 
 <header>
     <div class="logo-left">
-        <img src="images/logo.png" alt="Crossworld Logo">
+        <img src="images/your-company-logo.png" alt="Crossworld Logo">
     </div>
     <nav>
         <a href="#about">About</a>
@@ -233,7 +238,7 @@
         </div>
     </div>
     <div class="hero-image">
-        <img src="images/hero-bg.jpg" alt="NHS Medical Career">
+        <img src="images/hero-image.jpg" alt="NHS Medical Career">
     </div>
 </section>
 
@@ -244,7 +249,7 @@
       <p>Crossworld Travel Solutions provides a complete pathway for GMC registration and NHS career guidance for medical professionals. Our expert team ensures a smooth process from start to finish, helping you navigate the complexities of international medical recruitment.</p>
     </div>
     <div class="content-image">
-      <img src="images/about.jpg" alt="About GMNP">
+      <img src="images/about-image.jpg" alt="About GMNP">
     </div>
   </div>
 </section>
@@ -256,7 +261,7 @@
       <p>We offer comprehensive courses to prepare you for PLAB exams, GMC registration, and successful integration into NHS. Our curriculum includes live interactive sessions, recorded lectures by experts, and rigorous practice assessments to ensure you are exam-ready.</p>
     </div>
     <div class="content-image">
-      <img src="images/courses.jpg" alt="Medical Training Courses">
+      <img src="images/course-image.jpg" alt="Medical Training Courses">
     </div>
   </div>
 </section>
@@ -268,7 +273,7 @@
       <p>Our experienced trainers, personalized 1-on-1 support, and proven track record make us the ideal partner for your medical career in the UK. Join hundreds of successful candidates who have successfully transitioned to the NHS with our help.</p>
     </div>
     <div class="content-image">
-      <img src="images/why-us.jpg" alt="Why Choose Crossworld">
+      <img src="images/why-choose-us-image.jpg" alt="Why Choose Crossworld">
     </div>
   </div>
 </section>
@@ -280,7 +285,7 @@
       <p>The Global Medics NHS Programme (GMNP) is a specialized framework designed to guide international medical graduates (IMGs) through the GMC registration process and PLAB exams, ensuring they secure high-quality NHS placements efficiently.</p>
     </div>
     <div class="content-image">
-      <img src="images/gmnp.jpg" alt="Global Medics NHS Programme">
+      <img src="images/gmnp-image.jpg" alt="Global Medics NHS Programme">
     </div>
   </div>
 </section>
@@ -292,7 +297,7 @@
       <p>Our programme covers clinical training, mentorship from senior NHS doctors, and intensive exam preparation. We provide structured resources, visa guidance, and relocation assistance to make your journey stress-free.</p>
     </div>
     <div class="content-image">
-      <img src="images/details.jpg" alt="Programme Details">
+      <img src="images/program-details-images.jpg" alt="Programme Details">
     </div>
   </div>
 </section>
@@ -304,7 +309,7 @@
       <p>Success in PLAB is just the beginning. We offer dedicated guidance on professional CV building, NHS job applications, interview coaching, and long-term career progression support within the UK healthcare system.</p>
     </div>
     <div class="content-image">
-      <img src="images/support.jpg" alt="Post PLAB Support">
+      <img src="images/post-plab-support-image.jpg" alt="Post PLAB Support">
     </div>
   </div>
 </section>
@@ -312,7 +317,7 @@
 <section class="official-partner">
     <p><strong>"Crossworld Travel Solutions" is an official partner of Hive Medical Academy UK</strong></p>
     <div class="official-partner-logos">
-        <img src="images/logo.png" alt="Crossworld Logo">
+        <img src="images/your-company-logo.png" alt="Crossworld Logo">
         <img src="images/partner-logo.png" alt="Hive Medical Academy Logo">
     </div>
 </section>
@@ -324,7 +329,7 @@
         <p><strong>Email:</strong> <a href="mailto:crossworldpew@gmail.com" style="color:#4B0082;">crossworldpew@gmail.com</a></p>
         <p style="margin-top:10px;">
             <i class="fas fa-map-marker-alt"></i> 
-            <a href="https://maps.google.com/?q=Liberty+Mall+Tahkal+University+Road+Peshawar" target="_blank">
+            <a href="https://maps.google.com/?q=Liberty+Mall+Tahkal+University+Road+Peshawar" target="_blank" style="color:#4B0082;">
                 #4,5 2nd Floor, Liberty Mall, Tahkal University Road, Peshawar, Pakistan
             </a>
         </p>
@@ -335,6 +340,9 @@
         <a href="https://www.instagram.com/cross.world.pew?igsh=MTFoZWhqandwdmxvYg==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="mailto:crossworldpew@gmail.com"><i class="fas fa-envelope"></i></a>
         <a href="https://wa.me/923269575050" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://maps.google.com/?q=Liberty+Mall+Tahkal+University+Road+Peshawar" target="_blank" aria-label="Our Location">
+            <i class="fas fa-map-marker-alt"></i>
+        </a>
     </div>
 </section>
 
