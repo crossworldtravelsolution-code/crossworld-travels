@@ -144,6 +144,35 @@
             display: block;
         }
         .reverse .content-wrapper {flex-direction:row-reverse;}
+/* Reviews Section Styling */
+.reviews-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Agar aapne upar wali class HTML mein add ki hai, 
+   to is h2 styling ki zaroorat nahi padegi kyuki line 117-125 
+   ka code ise handle kar lega. */
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.reviews-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.reviews-container img:hover {
+  transform: scale(1.05);
+}
 
         /* Partner Section */
         .official-partner {
